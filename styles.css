@@ -120,7 +120,7 @@ a:hover{color: rgb(252,163,17);
 .collapsibleList label {
 	cursor: pointer;
 	width: 100%;
-	line-height: 43px;}
+	/*line-height: 43px;*/}
 .collapsibleList label img{
 	/*height: 36px; */
 	/*padding: 7px 12px; */}

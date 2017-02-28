@@ -138,6 +138,11 @@ a:hover{color: rgb(252,163,17);
 .collapsibleList a:hover{
 	text-decoration: underline;}
 
+#mylist-node1
+{
+  height:54;	
+}
+
 /* title classes */
 #title{
 	padding-top: 8vmin;

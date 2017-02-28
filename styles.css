@@ -312,6 +312,7 @@ a:hover{color: rgb(252,163,17);
 	.collapsibleList li > input + * {
 		display: block;}
 	.collapsibleList ul{
+		height: 60px;
 		float: right;
 		width: 500px;}
 	.collapsibleList.item{

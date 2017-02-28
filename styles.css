@@ -20,7 +20,9 @@ font-family: JosefinSans;}
 /*-----------------------------------------------*/
 
 /* format styles */
-body{}
+body{
+  height:100%;
+}
 h1{	color: rgb(252,163,17);
 	font-family: Amatic;
 	padding: 1.5vmin;}

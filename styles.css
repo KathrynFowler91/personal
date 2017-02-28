@@ -341,6 +341,10 @@ a:hover{color: rgb(252,163,17);
 /* media queries - >mobile*/
 @media all and (min-width:450px){
 	/* blog classes */
+	.collapsiblelist.item.hover{
+	  margin: 0 0 0 0;
+	  border: 0 0 0 0;
+	}
 	.blog img{
 		padding: 0;
 		width: 100%;}

@@ -29,7 +29,7 @@ h3{	font-family: Amatic;
 	font-style: italic;}
 h4{	color: rgb(150,150,150);
 	font-style: italic;}
-p, li{	font-size: 16px;
+p, li{	font-size: 14px;
 	line-height: 1.5;
 	/*padding-bottom: 2vmin;*/
 	font-family: JosefinSans;}
@@ -74,7 +74,7 @@ a:hover{color: rgb(252,163,17);
 	color: rgb(255,255,255);
 	font-weight: bold;
 	padding:40px;
-	text-align: right;
+	text-align: center;
 	background-color: rgb(20,30,25);}
 
 /*-----------------------------------------------*/
@@ -146,6 +146,7 @@ a:hover{color: rgb(252,163,17);
 	color: rgb(0,0,0);}
 #title h2{
 	font-size: 8vmin;
+	font-size: 32px;
 	color: rgb(0,0,0);}
 #title p{
 	font-size: 3vmin;
@@ -164,13 +165,14 @@ a:hover{color: rgb(252,163,17);
 	padding:0;}
 #footer-title p{
 	font-size: 10px;
-	padding:0;}
+	padding-bottom:0px;}
 #footer.index{
-	padding-top: 20vmin;
+	padding-top: 15vmin;
 	color: rgb(252,163,17);}
 .footer.social-media img{
 	width: 32px;
-	padding: 1px;}
+	padding: 1px;
+	padding-bottom: 20px;}
 
 /*-----------------------------------------------*/	
 
@@ -178,10 +180,11 @@ a:hover{color: rgb(252,163,17);
 
 /* index page */
 #content.index{
-	background-color: rgba(20,30,25,1);
-	padding: 1vmin;}
+	background-color: rgba(20,30,25,0);
+	padding: 1vmin;
+	text-align: center;}
 #content.index blockquote{
-	color: rgb(255,255,255);
+	color: rgb(0,0,0);
 	font-size: 12px;
 	font-weight: bold;
 	line-height: 1.8;}
@@ -215,7 +218,7 @@ a:hover{color: rgb(252,163,17);
 /* research classes */
 .research{}
 .research.box{
-	width: 90%;
+	width: 96%;
 	padding: 1vmin;
 	margin: 1vmin auto;
 	border: solid 2px rgb(252,163,17);
@@ -227,7 +230,7 @@ a:hover{color: rgb(252,163,17);
 	text-align: center;}
 .acknowledgements img{
 	height: 10%;
-	max-height: 80px;
+	max-height: 75px;
 	padding: 5%;
 	margin: 0 auto;}
 
@@ -250,8 +253,7 @@ a:hover{color: rgb(252,163,17);
 .blog a:link{}
 .blog a:visited{}
 .blog a:hover{
-	text-decoration: none;
-	}
+	text-decoration: none;}
 .intro{
 	text-align: left;
 	padding: 10px;
@@ -266,6 +268,23 @@ a:hover{color: rgb(252,163,17);
 	padding: 4vmin;
 	width: 150px;
 	margin:0 auto;}
+
+/* contact page */
+.contact{
+	text-align:center;}
+.contact p{}
+.contact a:link{
+	color: rgb(0,0,0);}
+.contact a:visited{
+	color: rgb(0,0,0);}
+.contact a:hover{
+	color: rgb(252,163,17);
+	text-decoration: none;}
+.contact img{
+	width: 40px;
+	padding: 10px;
+	vertical-align: middle;}
+
 
 /* general */
 .hline{
@@ -335,6 +354,8 @@ a:hover{color: rgb(252,163,17);
 		font-size: 24px;}
 	#title{
 		margin-top: 60px;}
+	#title h2{
+		font-size: 8vmin;
 }
 
 

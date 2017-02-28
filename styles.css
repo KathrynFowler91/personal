@@ -122,8 +122,8 @@ a:hover{color: rgb(252,163,17);
 	width: 100%;
 	/*line-height: 43px;*/}
 .collapsibleList label img{
-	/*height: 36px; */
-	/*padding: 7px 12px; */}
+	height: 36px;
+	padding: 7px 12px;}
 .collapsibleList.item{
 	list-style-type: none;
 	/*line-height: 18vh;*/

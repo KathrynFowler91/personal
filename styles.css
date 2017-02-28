@@ -344,6 +344,7 @@ a:hover{color: rgb(252,163,17);
 	.collapsiblelist.item.hover{
 	  margin: 0 0 0 0;
 	  border: 0 0 0 0;
+	  padding: 0 0 0 0;
 	}
 	.blog img{
 		padding: 0;

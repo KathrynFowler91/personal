@@ -31,7 +31,7 @@ h4{	color: rgb(150,150,150);
 	font-style: italic;}
 p, li{	font-size: 16px;
 	line-height: 1.5;
-	padding-bottom: 2vmin;
+	/*padding-bottom: 2vmin;*/
 	font-family: JosefinSans;}
 li{	margin-left: 4vmin;}
 blockquote{font-style: italic;}

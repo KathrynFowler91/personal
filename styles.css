@@ -143,6 +143,10 @@ a:hover{color: rgb(252,163,17);
   height:54;	
 }
 
+#button input{
+  display:None;	
+}
+
 /* title classes */
 #title{
 	padding-top: 8vmin;

@@ -333,7 +333,7 @@ a:hover{color: rgb(252,163,17);
 		width: 20%;
 		max-width: 100px;
 		text-align: center;}
-	.collapsibleList label{
+	#button label{
 		display: none;}
 	.collapsibleList a:link{
 		display: block;}

@@ -143,7 +143,7 @@ a:hover{color: rgb(252,163,17);
 	text-align: center;}
 #title.index{
 	background: none;
-	padding-bottom: 4vmin;}
+	padding-bottom: 1vmin;}
 #title h1{
 	font-size: 12vmin;
 	color: rgb(0,0,0);}
@@ -195,28 +195,20 @@ a:hover{color: rgb(252,163,17);
 	background-color: transparent;}
 
 /* about page */
+#bio{
+	font-weight: bold;
+}
+#bio img{
+	float: right;
+	width: 30%;
+	padding: 10px;
+}
 #cv img{
 	width: 70%;
 	max-width: 450px;
 	display: block;
     margin: 0 auto 10px auto;
 }
-#aboutProfile{
-	display: block;
-	margin: 0 auto;
-	padding: 1vmin;
-	width: 80%;
-	max-width: 500px;}
-#aboutWho{
-	width: 100%;
-	max-width:700px;
-	margin:0 auto;
-	padding: 10px 0;}
-#aboutWho col{
-	background-color: rgba(252,163,17,1);}
-#aboutWho td{
-	text-align: center;
-	padding: 8px;}
 	
 /* research classes */
 .research{}
@@ -258,6 +250,7 @@ a:hover{color: rgb(252,163,17);
 	padding: 5px;
 	margin: 0;}
 .blog img{
+	height:40%;
 	padding: 0;
 	width: 100%;}
 .blog a:link{}

@@ -1,0 +1,113 @@
+<!-- contact -->
+
+<html>
+
+<!-- head -->
+<head>
+<title>Kathryn Fowler's blog, "Newton's Cradle" 8/3/17 @KathrynFowler91</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../styles.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" href="../images/Cloud-rainbow.ico" />
+</head>
+
+<!-- body -->
+<body>
+<div id="wrapper">
+
+<!-- nav-bar -->
+<div id="nav-bar" class="bg">
+<div id="name"><h1>Kathryn Fowler<h1></div>
+<ul class="collapsibleList bg">
+ <li>
+  <label for="mylist-node1"><img src="../images/social-media/outline2/menu2.png"></label>
+  <input type="checkbox" id="mylist-node1" />
+  <ul>
+   <li class="collapsibleList item hover"><a href="../index.html">Home</a></li>
+   <li class="collapsibleList item hover"><a href="../about.html">About</a></li>
+   <li class="collapsibleList item hover"><a href="../research.html">Research</a></li>
+   <li class="collapsibleList item hover"><a href="../blog.html">Blog</a></li>
+   <li class="collapsibleList item hover"><a href="../contact.html">Contact</a></li>
+  </ul>
+ </li>
+</ul>
+</div>
+
+<!-- title -->
+<div id="title">
+<h2>Blog</h2>
+</div>
+
+<!-- content -->
+<div id="content">
+
+<div class="story">
+<h1>Newton's Cradle: defining the problem</h1>
+<h4>28/3/2017</h4>
+</div>
+
+<div class="story images">
+<img src="../images/blog/Newtons-cradle-defining-the-problem.gif">
+</div>
+
+<p>This blog post came about after watching a <a href="https://www.youtube.com/watch?v=yVkdfJ9PkRQ" target="_blank">youtube video of Newton's Cradle</a> in a research group meeting. My research group is a made up of cloud modellers. Some of us work with small one dimensional cloud models investigating how water and ice content vary in time, while others use larger scale three dimensional models, which also include the spatial developments of cloud structures. The enjoyment we gain from solving problems is one thing we all have in common. I guess that is the ultimate drive for any researcher. The problem Matt asked us this particular week was "Can we model Newton's Cradle?".</p>
+
+<p>To save this post from becoming an essay, I've broken the problem down into three seperate blogs. The first part is focused on defining the problem, second part is solving the problem and the final part is the modelling. First things first, let's define the problem.</p>
+
+<h2>Defining the problem</h2>
+
+<p>The only way to start any problem is with a daigram that contains all the forces we know that are acting on the pendulum system.</p>
+
+<div class="Limage">
+<img src="../images/blog/Newtons-cradle-defining-the-problem-diagram.jpg" width="100%">
+</div>
+
+<p>Each "bob" follows Newton's second law of motion where external forces acting upon an object are proprtional to the product of mass and acceleration. The forces that we need to consider acting upon the ball bearing are gravity and a frictional damping force. Combining these forces, gives us the equation for simple harmonic motion,</p>
+
+<div class="Limage">
+<img src="../images/blog/pendulum_equation.png" width="100%">
+</div>
+
+<p>where <i>m</i> is the mass of the bob, <i>g</i> the gravitational constant and <i>b</i> a constant parameter defining the dampening effect. The equation has been written in a spherical coordinate system as the orientation of problem means that the bob will have a constant radial distant from the centre of the problem and only the angle the arm makes with the vertical is needed to describe any change in position.</p>
+
+<p>Finally the boundary and initial conditions must be defined in order to solve this problem for the specific situation of Newton's cradle. Initially, the ball bearings are displaced and released from and angle <i>&theta;<sub>0</sub></i> with an initial angular velocity of <i>&theta;&#775;<sub>0</sub></i>. This can be written,</p>
+
+<div class="Limage">
+<img src="../images/blog/pendulum_ic.png" width="100%">
+</div>
+
+<p>and so the problem has been defined. The next blog will solve this problem and just as a warning, there's quite a bit a maths.</p>
+
+
+<!-- Share buttons-->
+<div id="shareButtons">
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style center">
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+</div>
+
+</div>
+
+<!-- footer -->
+<div id="footer">
+<div id="footer-title">
+	<p>An atmospheric Science PhD Student, who loves to learn.</p>
+	<h1>Kathryn Fowler<h1>
+	<div class="footer social-media">
+		<a href="http://www.twitter.com/kathrynfowler91" target="_blank"><img src="../images/social-media/outline3/twitter.png" alt="twitter"></a>
+		<a href="http://www.facebook.com/kathrynfowler91" target="_blank"><img src="../images/social-media/outline3/facebook.png" alt="Facebook"></a>
+		<a href="http://www.instagram.com/kathrynfowler91" target="_blank"><img src="../images/social-media/outline3/instagram.png" alt="Instagram"></a>
+		<a href="http://www.linkedin.com/in/kathrynfowler91" target="_blank"><img src="../images/social-media/outline3/linkedin.png" alt="LinkedIn"></a>
+		<a href="mailto:KathrynFowler91@outlook.com"><img src="../images/social-media/outline3/mail.png" alt="email"></a>
+	</div>
+</div>
+<p>Website created by Kathryn Fowler<p>
+</div>
+
+</div>
+</body>
+
+</html>

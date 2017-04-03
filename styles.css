@@ -170,7 +170,7 @@ a:hover{color: rgb(252,163,17);
 	font-size: 10px;
 	padding-bottom:0px;}
 #footer.index{
-	padding-top: 15vmin;
+	padding-top: 8vmin;
 	color: rgb(252,163,17);}
 .footer.social-media img{
 	width: 32px;
@@ -397,7 +397,7 @@ a:hover{color: rgb(252,163,17);
 		padding: 0;
 		width: 100%;}
 	.blog{
-		float: left;
+		display: inline-block;
 		width: 30%;
 		padding: 0;
 		margin: 1.4%;}

@@ -4,10 +4,22 @@
 
 <!-- head -->
 <head>
-<title>Kathryn Fowler's blog, "Newton's Cradle" 28/3/17 @KathrynFowler91</title>
+<title>Kathryn Fowler's blog, "Newton's Cradle: modelling the problem" 30/4/17 @KathrynFowler91</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="../styles.css" type="text/css" rel="stylesheet"/>
-<link rel="icon" href="../images/Cloud-rainbow.ico"/>
+<link rel="icon" href="../images/Cloud-rainbow.ico" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 </head>
 
 <!-- body -->
@@ -41,42 +53,46 @@
 <div id="content">
 
 <div class="story">
-<h1>Newton's Cradle: defining the problem</h1>
-<h4>28/3/2017</h4>
+<h1>Newton's Cradle: Modelling the problem</h1>
+<h4>30/4/2017</h4>
 </div>
 
 <div class="story images">
-<img src="../images/blog/Newtons-cradle-defining-the-problem.gif">
+<img src="../images/blog/Newtons_cradle_modelling_the_problem_title.gif">
 </div>
 
 <p>This blog post came about after watching a <a href="https://www.youtube.com/watch?v=yVkdfJ9PkRQ" target="_blank">youtube video of Newton's Cradle</a> in a research group meeting. My research group is a made up of cloud modellers. Some of us work with small one dimensional cloud models investigating how water and ice content vary in time, while others use larger scale three dimensional models, which also include the spatial developments of cloud structures. The enjoyment we gain from solving problems is one thing we all have in common. I guess that is the ultimate drive for any researcher. The problem Matt asked us this particular week was "Can we model Newton's Cradle?".</p>
 
-<p>To save this post from becoming an essay, I've broken the problem down into three seperate blogs. The first part is focused on defining the problem, second part is solving the problem and the final part is the modelling. First things first, let's define the problem.</p>
+<p>To save this post from becoming an essay, I've broken the problem down into three seperate blogs. The first part was focused on <a href="Newton's-cradle-defining-the-problem.html" target="_blank">defining the problem</a>, the second part, <a href="Newton's-cradle-solving-the-problem.html" target="_blank">solving the problem</a> and this final part will be the modelling.</p>
 
-<h2>Defining the problem</h2>
+<h2>Modelling the problem</h2>
 
-<p>The only way to start any problem is with a daigram that contains all the forces we know that are acting on the pendulum system.</p>
+<p>I initially started by modelling a single pendulum using the solutions found in the last <a href="Newton's-cradle-defining-the-problem.html" target="_blank">blog</a>. Then modelled a fifteen seperate pendulums defining the length of each of them. However, I found that the pendulums never realigned and became in phase again. Hence, I found that it was key to select the lengths of the pendulums based on their frequency,</p>
+<p><center>\[\omega=\sqrt{\frac{g}{L}-\frac{\beta}{4L}}\],</center></p>
+<p>and time period,</p>
+<p><center>\[T_1=\frac{2\pi}{\omega_1}\].</center></p>
+<p>We want to ensure that we choose pendulums, such that the time periods of each of the individual pendulums are a multiple of one another. Say we want pendulum 1 to complete $n_1$ swings in a time $T_n$, then this can be generalised to say that pendulum $i$ completes $n_i$ swings in a time $T_n$,</p>
+<p><center>\[T_n=\frac{2\pi n_i}{\omega_i}\].</center></p>
 
-<div class="Limage">
-<img src="../images/blog/Newtons-cradle-defining-the-problem-diagram.jpg" width="100%">
-</div>
+<p>We need to solve this to find the lengths of the individual pendulums, $L_i$,</p>
+<p><center>\begin{align}
+\omega_i &= \frac{2\pi n_i}{T_n}, \\
+\sqrt{\frac{g}{L_i}-\frac{\beta}{4L_i}} &= \frac{2\pi n_i}{T_n}, \\
+\frac{1}{L_i}\left(g-\frac{\beta}{4}\right) &= \left(\frac{2\pi n_i}{T_n}\right)^2, \\
+L_i &= \left(g-\frac{\beta}{4}\right)\left(\frac{T_n}{2\pi n_i}\right)^2.
+\end{align}</center></p>
+<p>Using this equation and defining a time $T_n$ where all $N$ pendulums come back into phase one another. Say,</p>
+<p><center>\begin{align} 
+T_n &= 30\text{seconds}, \\
+n_i &= (30:1:30+(N-1)) \text{swings},
+\end{align}</center>
+wich gives the final result...</p>
 
-<p>Each "bob" follows Newton's second law of motion where external forces acting upon an object are proprtional to the product of mass and acceleration. The forces that we need to consider acting upon the ball bearing are gravity and a frictional damping force. Combining these forces, gives us the equation for simple harmonic motion,</p>
+<center>
+<img src="../images/blog/Newtons_cradle_modelling_the_problem.gif">
+</center>
 
-<div class="Limage">
-<img src="../images/blog/pendulum_equation.png" width="100%">
-</div>
-
-<p>where <i>m</i> is the mass of the bob, <i>g</i> the gravitational constant and <i>b</i> a constant parameter defining the dampening effect. The equation has been written in a spherical coordinate system as the orientation of problem means that the bob will have a constant radial distant from the centre of the problem and only the angle the arm makes with the vertical is needed to describe any change in position.</p>
-
-<p>Finally the boundary and initial conditions must be defined in order to solve this problem for the specific situation of Newton's cradle. Initially, the ball bearings are displaced and released from and angle <i>&theta;<sub>0</sub></i> with an initial angular velocity of <i>&theta;&#775;<sub>0</sub></i>. This can be written,</p>
-
-<div class="Limage">
-<img src="../images/blog/pendulum_ic.png" width="100%">
-</div>
-
-<p>and so the problem has been defined. The next blog will solve this problem and just as a warning, there's quite a bit a maths.</p>
-
+<p class="contact"><a href="../blog/code/NewtonsCradle.m" target="_blank"><img src="../images/logos/Matlab_Logo.png" height="40px"></a> I have used matlab to produce this code, which is available to download <a href="../files/code/NewtonsCradle.m" target="_blank">here</a>.</p>
 
 <!-- Share buttons-->
 <div id="shareButtons">

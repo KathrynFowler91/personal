@@ -45,10 +45,10 @@ a:hover{color: rgb(252,163,17);
 /* id styles */
 #wrapper{
 	background-color: white;
-	background-color: rgba(245,245,245,1);
 	position: relative;
 	min-height:100vh;}
 #nav-bar{
+	background-color: white;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -75,10 +75,11 @@ a:hover{color: rgb(252,163,17);
 	max-width: 900px;
 	padding-bottom:40px;}
 #footer{
-	height:150px;
+	min-height:150px;
 	color: rgb(255,255,255);
 	font-weight: bold;
-	padding:40px;
+	padding-top:40px;
+	padding-bottom: 10px;
 	text-align: center;
 	background-color: rgb(20,30,25);}
 
@@ -88,25 +89,44 @@ a:hover{color: rgb(252,163,17);
 
 /* background class */
 #wrapper.index{
-	background-image: url(images/background/bw_road.jpg);
+	/*background-image: url(images/background/bw_road.jpg);
 	background-position:center bottom;
 	background-size:cover;
-	background-repeat:no-repeat;}
+	background-repeat:no-repeat;*/
+	background-color: rgb(255,255,255);}
 #wrapper2{
-	background-color: rgba(255,255,255,1);}
+	background-color: rgba(245,245,245,1);}
 
 /* title image */
 #title{
-	background-image: url(images/background/grey_clouds.jpeg);
+	background-image: url(images/background/grey_clouds.jpg);
 	background-position:right bottom;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-color: rgb(250,250,250);
-	border-bottom: 2px solid white;}
+	min-height: 95vh;
+	/*border-bottom: 2px solid white;*/}
+#title.index{
+	background-image: url(images/background/nightsky.png);
+	background-position:right top;
+	background-size:cover;
+	background-repeat:no-repeat;}
+#title.about{
+	background-image: url(images/background/bw_graduation1.JPG);
+	background-position:right center;
+	background-size:cover;
+	background-repeat:no-repeat;}
+#title.research{}
+#title.blog-title{
+	background-image: url(images/background/bw_WLSpain.jpg);
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;}
+#title.contact{}
 
-/* color class */
+/* color class navbar */
 .bg{
-	background-color: rgba(255,255,255,0.9);}
+	background-color: rgba(255,255,255,1);}
 .collapsibleList.bg a{
 	background-color: rgba(252,163,17,0.9);
 	color: white;}
@@ -150,23 +170,11 @@ a:hover{color: rgb(252,163,17);
 	padding-bottom: 2vmin;
 	text-align: left;
 	/*color: rgb(252,163,17);*/}
-#title.index{
-	background: none;
-	border: none;
-	padding-top: 4vmin;
-	padding-bottom: 1vmin;
-	text-align: center;
-	color: rgb(0,0,0);}
-#title.index h1{
-	color: rgb(0,0,0);}
 #title h1{
 	font-size: 12vmin;}
 #title h2{
 	font-size: 8vmin;
 	font-size: 32px;}
-#title.index p{
-	font-size: 3vmin;
-	padding: 0;}
 .social-media img{
 	width: 8vmin;
 	padding: 1vmin;
@@ -191,9 +199,6 @@ a:hover{color: rgb(252,163,17);
 #footer-title p{
 	font-size: 10px;
 	padding-bottom:0px;}
-#footer.index{
-	padding-top: 8vmin;
-	color: rgb(252,163,17);}
 .footer.social-media img{
 	width: 32px;
 	padding: 1px;
@@ -204,17 +209,34 @@ a:hover{color: rgb(252,163,17);
 /* individual page design */
 
 /* index page */
-#content.index{
-	background-color: rgba(20,30,25,0);
-	padding: 1vmin;
-	text-align: center;}
-#content.index blockquote{
+#title.index{
+	border: none;
+	padding-top: 4vmin;
+	padding-bottom: 1vmin;
+	text-align: center;
+	color: rgb(255,255,255);}
+#title.index h1{
+	color: rgb(255,255,255);}
+#title.index p{
+	font-size: 3vmin;
+	padding: 0;
+	color: rgb(255,255,255);}
+#title.index blockquote{
 	color: rgb(0,0,0);
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
 	line-height: 1.8;}
+#content.index{
+	/*background-color: rgba(20,30,25,0);*/
+	padding: 1vmin;
+	text-align: center;
+	color: rgb(0,0,0);}
+#content.index p{
+	padding-top: 4vh;}
 #footer.index{
-	background-color: transparent;}
+	background-color: transparent;
+	color: rgb(252,163,17);
+	padding: 40px;}
 
 /* about page */
 #bio{
@@ -243,7 +265,7 @@ a:hover{color: rgb(252,163,17);
 	padding: 1vmin;
 	margin: 1vmin auto;
 	/*border: solid 2px rgb(252,163,17);*/
-	background: rgba(255,255,255,0.8);}
+	background: rgba(255,255,255,1);}
 .research.box h2{
 	padding-bottom: 10px;}
 .box{}
@@ -448,9 +470,10 @@ a:hover{color: rgb(252,163,17);
 	#content.index blockquote{
 		font-size: 24px;}
 	#title{
-		margin-top: 60px;}
+		margin-top: 60px;
+		min-height: 55vh;}
 	#title h2{
-		font-size: 8vmin;
+		font-size: 8vmin;}
 }
 
 

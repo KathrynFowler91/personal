@@ -104,7 +104,7 @@ a:hover{color: rgb(252,163,17);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-color: rgb(250,250,250);
-	min-height: 95vh;
+	min-height: 55vh;
 	/*border-bottom: 2px solid white;*/}
 #title.index{
 	background-image: url(images/background/nightsky.png);
@@ -113,7 +113,7 @@ a:hover{color: rgb(252,163,17);
 	background-repeat:no-repeat;}
 #title.about{
 	background-image: url(images/background/bw_graduation1.JPG);
-	background-position:right center;
+	background-position:center center;
 	background-size:cover;
 	background-repeat:no-repeat;}
 #title.research{}
@@ -211,7 +211,7 @@ a:hover{color: rgb(252,163,17);
 /* index page */
 #title.index{
 	border: none;
-	padding-top: 4vmin;
+	padding-top: 10vmin;
 	padding-bottom: 1vmin;
 	text-align: center;
 	color: rgb(255,255,255);}
@@ -227,16 +227,19 @@ a:hover{color: rgb(252,163,17);
 	font-weight: bold;
 	line-height: 1.8;}
 #content.index{
-	/*background-color: rgba(20,30,25,0);*/
-	padding: 1vmin;
+	/*background-color: rgba(245,245,245,1);*/
+	padding: 0;
+	padding-top: 1vmin;
+	padding-bottom: 4vmin;
 	text-align: center;
 	color: rgb(0,0,0);}
 #content.index p{
 	padding-top: 4vh;}
 #footer.index{
-	background-color: transparent;
+	/*background-color: transparent;
 	color: rgb(252,163,17);
-	padding: 40px;}
+	padding-top: 40px;
+	padding-bottom: 0;*/}
 
 /* about page */
 #bio{
@@ -256,6 +259,12 @@ a:hover{color: rgb(252,163,17);
 	max-width: 450px;
 	display: block;
     margin: 0 auto 10px auto;
+}
+.about img{
+	width: 70%;
+	display: block;
+    margin: 0 auto 10px auto;
+	padding: 10px;
 }
 	
 /* research classes */
@@ -491,9 +500,9 @@ a:hover{color: rgb(252,163,17);
 		width: 100%;}
 	.blog{
 		display: inline-block;
-		width: 30%;
+		width: 31%;
 		padding: 0;
-		margin: 1.4%;}
+		margin: 1%;}
 		
 	/* about page */
 	.about iframe{

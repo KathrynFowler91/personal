@@ -99,30 +99,43 @@ a:hover{color: rgb(252,163,17);
 
 /* title image */
 #title{
-	background-image: url(images/background/grey_clouds.jpg);
+	/*background-image: url(images/background/grey_clouds.jpg);
 	background-position:right bottom;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-color: rgb(250,250,250);
-	min-height: 55vh;
+	min-height: 55vh;*/
 	/*border-bottom: 2px solid white;*/}
 #title.index{
 	background-image: url(images/background/nightsky.png);
 	background-position:right top;
 	background-size:cover;
-	background-repeat:no-repeat;}
+	background-repeat:no-repeat;
+	background-color: rgb(20,30,25);}
 #title.about{
 	background-image: url(images/background/bw_graduation1.JPG);
 	background-position:center center;
 	background-size:cover;
 	background-repeat:no-repeat;}
-#title.research{}
+#title.research{
+	background-image: url(images/background/grey_clouds.jpg);
+	background-position:right bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-color: rgb(250,250,250);
+	min-height: 55vh;}
 #title.blog-title{
 	background-image: url(images/background/bw_taipei1.JPG);
 	background-position:center center;
 	background-size:cover;
 	background-repeat:no-repeat;}
-#title.contact{}
+#title.contact{
+	background-image: url(images/background/grey_clouds.jpg);
+	background-position:right bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-color: rgb(250,250,250);
+	min-height: 55vh;}
 
 /* color class navbar */
 .bg{
@@ -231,7 +244,7 @@ a:hover{color: rgb(252,163,17);
 	padding: 0;
 	padding-top: 1vmin;
 	padding-bottom: 4vmin;
-	text-align: center;
+	text-align: left;
 	color: rgb(0,0,0);}
 #content.index p{
 	padding-top: 4vh;}
@@ -240,6 +253,8 @@ a:hover{color: rgb(252,163,17);
 	color: rgb(252,163,17);
 	padding-top: 40px;
 	padding-bottom: 0;*/}
+.intro h2{
+	text-align: center;}
 
 /* about page */
 #bio{
